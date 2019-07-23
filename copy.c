@@ -5,7 +5,7 @@
 #include <stdlib.h>
 int main(int argc, char* argv[]) {
   if(argc < 3) {
-    errx(EXIT_FAILURE, "Usage: %s <src_file> <dst_file>", argv[0]);
+    errx(EXIT_SUCCESS, "Usage: %s <src_file> <dst_file>", argv[0]);
   } 
   int src;
   if((src = open(argv[1], O_RDONLY)) == -1) {
